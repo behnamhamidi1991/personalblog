@@ -1,0 +1,60 @@
+
+
+:root {
+--gradient01: #3692f1;
+--gradient02: #4dcfc6;
+--m-color: #0070f4;
+--s-color: #191919;
+}
+
+
+.btn-light {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--m-color);
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.btn-light:hover {
+    transform: translateY(-3px);
+}
+
+
+.btn-dark {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--s-color);
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.btn-dark:hover {
+    transform: translateY(-3px);
+}
+
+.watch-btn {
+    border: none;
+    padding: 7px 8px;
+    background: linear-gradient(#3692f1, #4dcfc6);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.watch-btn:hover {
+    transform: translateY(-3px);
+}
+

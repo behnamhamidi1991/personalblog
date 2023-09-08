@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --gradient01: #3692f1;
+    --gradient02: #4dcfc6;
+    --m-color: #0070f4;
+    --s-color: #191919;
+    }
+
+    body {
+        background-color: #f6f6f6;
+    }
+
+/* --------- HEADER --------- */
+header {
+    width: 100%;
+    height: 70px;
+    padding: 15px 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    transition: all ease-in-out .3s;
+}
+
+header.sticky {
+    background-color: #fbfbfb;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.093);
+}
+
+header #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--m-color);
+}
+
+header #logo a, span {
+    font-size: 20px;
+    color: var(--m-color);
+    font-weight: 700;
+}
+header #logo span {
+    color: var(--s-color);
+}
+
+header #logo i {
+    font-size: 30px;
+}
+
+.nav-list {
+    display: flex;
+    margin-left: 30px;
+}
+
+.nav-item {
+    margin: 0 10px;
+    color: var(--s-color);
+    transition: all ease-in-out .2s;
+}
+
+.nav-item:hover {
+    color: var(--m-color);
+}
+
+/* ----------HOME--------- */
+#home {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home .text {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#home .home-picture img {
+    width: 300px;
+    margin-top: 30px;
+}
+
+
+#home h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    transition: all ease .3s;
+    font-weight: 300;
+    
+}
+
+#home h1 span {
+    font-size: 4rem;
+    background: linear-gradient(#3692f1, #4dcfc6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+#home button {
+    margin-top: 10px;
+}
+
+#home .home-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* BLOG */
+#blog {
+    width: 100%;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#blog .content {
+    margin: 6px;
+    padding: 6px;
+    /* background-color: red; */
+}
+
+.sidebar {
+    margin: 6px;
+    padding: 22px;
+}
+
+.blog-container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.149);
+    margin: 14px 0;
+    border-radius: 4px;
+}
+
+.blog-container  img {
+    width: 100%;
+}
+
+.blog-container .image {
+    padding: 8px;
+}
+
+.blog-container .post-content {
+    padding: 18px;
+}
+
+.blog-container .post-content h3 {
+    font-size: 2rem;
+    color: var(--m-color);
+}
+
+.blog-container .post-content p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.blog-container .post-content p a {
+    color: var(--m-color);
+    text-transform: uppercase;
+    transition: all ease-in-out .2;
+}
+
+.blog-container .post-content p a:hover {
+    color: var(--gradient02);
+}
+
+
+
+
+
+
+
+/* SIDE BAR */
+#blog .sidebar {
+    background-color: #ffffff;
+    padding: 50px 6px;
+    margin-top: 27px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.149);
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    border-radius: 4px;
+}
+
+#blog .sidebar img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+#blog .sidebar .blogger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 58px;
+    line-height: 1.8;
+}
+
+#blog .sidebar .blogger h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+.sidebar .blogger p {
+    font-weight: 300;
+}
+
+.sidebar .social {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .social ul {
+    display: flex;
+}
+
+.sidebar .social h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.sidebar .social i {
+    font-size: 30px;
+    margin: 0 5px;
+    color: var(--m-color);
+    margin-top: 5px;
+    transition: all ease-in-out .3s;
+}
+
+.sidebar .social i:hover {
+    color: var(--gradient02);
+}
+
+.sidebar .experiences h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.sidebar .experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    line-height: 2;
+}
+
+.sidebar .experiences li {
+    border-bottom: 1px solid #adadad;
+    padding: 5px;
+}
+
+.sidebar .experiences li a {
+    color: #333;
+    display: inline-block;
+    transition: all ease-in-out .2s;
+}
+
+.sidebar .experiences li a:hover {
+    transform: translateX(3px);
+}
+
+
+
+.sidebar .links h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.sidebar .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    line-height: 2;
+}
+
+.sidebar .links li {
+    border-bottom: 1px solid #adadad;
+    padding: 5px;
+}
+
+.sidebar .links li a {
+    color: #333;
+    display: inline-block;
+    transition: all ease-in-out .2s;
+}
+
+.sidebar .links li a:hover {
+    transform: translateX(3px);
+}
+
+#podcasts img {
+    width: 100%;
+}
+
+#podcasts {
+      display: flex;
+      padding: 0 5%;
+      gap: 20px;
+}
+
+/* COURSES */
+#courses {
+    width: 100%;
+    padding: 0 6%;
+    margin: 100px 0;
+}
+
+#courses p {
+    margin-bottom: 15px;
+}
+
+#courses .course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+    gap: 15px;
+}
+
+.course {
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.course .course-info {
+    padding: 15px 20px;
+}
+
+
+.course-img img {
+    width: 100%;
+}
+
+.course-info .teacher img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.course-info .teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+.course-info button {
+    border: none;
+    padding: 4px 8px;
+    background-color: var(--gradient01);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+    transition: all ease-in-out .3s;
+    border-radius: 10px;
+}
+
+.course-info button:hover {
+    background-color: var(--gradient02);
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #fff;
+    padding: 50px 10%;
+    transition: all ease-in-out .2s;
+}
+
+footer .about {
+    padding: 25px 3%;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    line-height: 2;
+}
+
+footer .about h4 {
+    font-size: 22px;
+    color: var(--m-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer .link-container .middle {
+    display: flex;
+    padding: 25px;
+    gap: 15px;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+footer .link-container .middle a {
+    color: #333;
+    display: inline-block;
+    transition: all ease-in-out .1s;
+}
+
+footer .link-container .middle a:hover {
+    transform: translateX(3px);
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1862px) {
+    .blog-container .post-content p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1714px) {
+    .blog-container .post-content p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1462px) {
+    .blog-container .post-content p {
+        font-size: 14px;
+    }
+
+    .blog-container .post-content h3 {
+        font-size: 1.5rem;
+    }
+
+    footer .link-container .middle {
+        padding: 20px 1px;
+        justify-content: center;
+    }
+}
+
+
+/* 
+footer .link-container .middle {
+    display: flex;
+    padding: 25px;
+    gap: 15px;
+    justify-content: space-around;
+    margin: 40px 0;
+} */
+
+@media screen and (max-width: 1320px) {
+   
+    #blog {
+        display: flex;
+    }
+
+    .content {
+        width: 70%;
+    }
+
+    .sidebar {
+        width: 30%;
+    }
+
+
+    .blog-container .image {
+        display: none;
+    }
+
+    footer .link-container .middle {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+   
+}
+
+@media screen and (max-width: 1062px) {
+    .content {
+        width: 65%;
+    }
+
+    .sidebar {
+        width: 35%;
+    }
+
+}
+
+@media screen and (max-width: 912px) {
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+

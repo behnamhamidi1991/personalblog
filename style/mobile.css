@@ -1,0 +1,141 @@
+#home h1 {
+    font-size: 2rem;
+}
+
+#home h1 span {
+    font-size: 4.1rem;
+}
+
+header {
+    justify-content: space-between;
+}
+
+.hamburger-menu {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 18px;
+    right: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Hamburger Lines */
+
+.line {
+    width: 100%;
+    height: 3px;
+    border-bottom: 3px solid #1f1f1f;
+    transition: all ease-in-out .3s;
+}
+
+.change .line {
+    border-bottom: 3px solid #fff;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-8px, -6px);
+
+}
+
+.navbar {
+    width: 300px;
+    height: 100%;
+    background-color: var(--m-color);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out .3s;
+}
+
+.change {
+    right: 0;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -100px;
+}
+
+.nav-item {
+    color: #fff;
+    line-height: 3;
+    transition: all ease-in-out .2s;
+    padding: 0 4px;
+}
+
+.nav-item:hover {
+    color: #fff;
+    border-left:5px solid ;
+}
+
+#about .description h3 {
+    font-size: 30px;
+}
+
+/* MEDIA */
+
+
+
+@media screen and (max-width: 608px) {
+    #home .text h1 {
+        font-size: 1.5rem;
+    }
+
+    #home .text h1 span {
+        font-size: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+.sidebar {
+    display: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#blog {
+    display: flex;
+}
+
+#home .text h1 {
+    font-size: 1rem;
+}
+
+#home .text h1 span {
+    font-size: 2rem;
+}
+
+.post-content p {
+    text-align: justify;
+}
+
+footer .about p {
+    font-size: 15px;
+}
+
+}
+
